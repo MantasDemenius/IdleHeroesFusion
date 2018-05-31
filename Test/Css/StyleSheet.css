@@ -1,0 +1,40 @@
+﻿body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+#MainForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(64px, auto);
+    align-items:center;
+    grid-
+    grid-gap:1em;
+}
+
+.images{
+  height: auto;
+  width: auto;
+  justify-self:end;
+}
+
+#MainForm img{
+    height: 64px;
+    width: 64px;
+
+}
+
+
+#MainForm span {
+    margin: 0px;
+    padding: 0px;
+}
