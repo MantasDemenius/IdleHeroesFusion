@@ -1,9 +1,9 @@
 Shadow
-Chain hammer;3;0;0;0
-Dark priest;3;0;0;0
+Chain hammer 3 0 0 0
+Dark priest 3 0 0 0
 Fortress
-Reggie;3;0;0;0
-Fire fist;3;0;0;0
+Reggie3 0 0 0
+Fire fist 3 0 0 0
 Abyss
 Forest
 Dark

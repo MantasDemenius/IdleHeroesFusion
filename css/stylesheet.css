@@ -1,8 +1,10 @@
-﻿body {
+﻿/*global*/
+body {
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
     background-color: #f4f4f4;
+    text-align: center;
 }
 
 .container {
@@ -12,13 +14,32 @@
     
 }
 
+.container-grid {
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    grid-auto-rows: minmax(32px, auto);
+    grid-column-gap: 0.5em;
+
+}
+
+/*Image forms*/
 #Images {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(64px, auto);
     align-items:center;
-    
     grid-gap:1em;
+    margin-top:1%;
+}
+
+.ImageSpinner:nth-child(even) {
+    display: block;
+    margin-left: 2px;
+    
+}
+
+.ImageSpinner:nth-child(odd) {
+    display: block;
 }
 
 .ImageFaces{
@@ -26,11 +47,23 @@
     max-width:64px;
     height: auto;
     width: auto;
+    
 }
 
-.ImageForm{
-    display:inline-flex;
-    align-items:center;
+.ImageForm {
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.ImageLabels {
+    display:block;
+    margin: 0 auto 0 auto;
+}
+
+.ImageCount {
+    display: block;
+    margin: 0 1% 0 auto;
 }
 
 .ImageSpinner{
@@ -40,9 +73,79 @@
     width:auto;
 }
 
-.DropDownList{
-    grid-column:1/3;
-    grid-row:1/2;
+/*Top navigation*/
+
+#top-nav {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.logo {
+    float: left;
+    padding-left: 2%;
+    outline: none;
 
 }
 
+.logo a {
+    text-decoration: none;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #1AAB8A;
+}
+/*side buttons navigation*/
+
+#left-nav {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: inline-block;
+    height:auto;
+}
+
+#side-buttons {
+    margin: auto;
+
+}
+
+.side-buttons-big {
+    border-right: 1px solid #1AAB8A;
+    border-bottom: 1px solid #1AAB8A;
+}
+
+.side-buttons-big:nth-child(1) {
+    border-top:1px solid #1AAB8A;
+}
+
+.SideButtons {
+    background: #f4f4f4;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    max-height: 100%;
+    width: 100%;
+}
+
+.SideButtons:hover {
+    background: #fff;
+    color: #1AAB8A;
+}
+
+/*footer*/
+
+/*#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1AAB8A;
+    color: #fff;
+    text-align: center;
+    height:3%;
+}
+
+#footer p {
+    margin:auto;
+}*/
