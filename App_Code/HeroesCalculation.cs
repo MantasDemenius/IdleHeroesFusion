@@ -21,7 +21,7 @@ public static class HeroesCalculation
 
         if(int.TryParse(BagHeroes, out TestNumber))
         {
-            NumberOfHeroes += + TestNumber/ 20;
+            NumberOfHeroes += + TestNumber;
         }
 
         if (NumberOfHeroes < 0) NumberOfHeroes = 0;
