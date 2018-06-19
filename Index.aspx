@@ -1,21 +1,22 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Main.aspx.cs" Inherits="Main" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Index.aspx.cs" Inherits="Index" %>
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Idle Heroes Fusion</title>
-    <link rel="stylesheet" href="/css/stylesheet.css"/>
+    <link rel="stylesheet" href="~/css/stylesheet.css"/>
 </head>
 <body>
     <form id="MainForm" runat="server">
         <div class="container">
             <div class="container-grid">
+                
                 <div id="top-nav">
                     <div class="logo">
-                        <h1><a href="Main.aspx">Idle Heroes Fusion</a></h1>
+                        <h1><a href="Index.aspx">Idle Heroes Fusion</a></h1>
                     </div>
                      <div id="top-buttons">
                          <div class="top-buttons-big">
@@ -37,7 +38,7 @@
                             </div>
                         </div>
                      </div>
-                    </div>     
+                    </div>
                 <div id="left-nav">
                     <div id="side-buttons">
                         <div class="side-buttons-big">
@@ -54,7 +55,6 @@
                             <asp:Button ID="SaveButton" CssClass="SideButtons" runat="server" OnClick="SaveButton_Click" Text="Save to your bag" />
                         </div>
                     </div>
-                    
                 </div>
                 <div id="Images">
                    
@@ -368,6 +368,9 @@
                 <div id="right-nav">
 
                 </div>
+
+                
+
                 
             </div>
             <%--<div id="footer">

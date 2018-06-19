@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterForm.master.cs" Inherits="MasterForm" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Idle Heroes Fusion</title>
+    <link rel="stylesheet" href="~/css/stylesheet.css"/>
+</head>
+<body>
+    <form id="MainForm" runat="server">
+        <div class="container">
+            <div class="container-grid">
+                
+                <div id="top-nav">
+                    <div class="logo">
+                        <h1><a href="Index.aspx">Idle Heroes Fusion</a></h1>
+                    </div>
+                     <div id="top-buttons">
+                         <div class="top-buttons-big">
+                                <asp:Button ID="ThreeStarButton" CssClass="TopButtons" runat="server" OnClick="ThreeStarButton_Click" Text="3* Heroes" />
+                        </div>
+                        <div class="top-buttons-big">
+                                <asp:Button ID="FourStarDropDownButton" CssClass="TopButtons-1" runat="server" OnClick="FourStarDropDownButton_Click" Text="4* Heroes" />                       
+                        </div>
+                        <div class="top-buttons-big">
+                            <div class="dropdown-1">
+                                <asp:Button ID="FiveStarDropDownButton" CssClass="TopButtons-1" runat="server" OnClick="FiveStarDropDownButton_Click" Text="5* Heroes" />
+                            <div class="dropdown-content-2">
+                                <asp:Button ID="FiveStarDropDownButton1" CssClass="DrpDownButt-2" runat="server" OnClick="FiveStarDropDownButton1_Click" Text="Shadow" />
+                                <asp:Button ID="FiveStarDropDownButton2" CssClass="DrpDownButt-2" runat="server" OnClick="FiveStarDropDownButton2_Click" Text="Abyss" />
+                                <asp:Button ID="FiveStarDropDownButton3" CssClass="DrpDownButt-2" runat="server" OnClick="FiveStarDropDownButton3_Click" Text="Fortess" />
+                                <asp:Button ID="FiveStarDropDownButton4" CssClass="DrpDownButt-2" runat="server" OnClick="FiveStarDropDownButton4_Click" Text="Forest" />
+                                <asp:Button ID="FiveStarDropDownButton5" CssClass="DrpDownButt-2" runat="server" OnClick="FiveStarDropDownButton5_Click" Text="Dark/Light" />
+                            </div>
+                            </div>
+                        </div>
+                     </div>
+                    </div>
+                <div id="left-nav">
+                    <div id="side-buttons">
+                        <div class="side-buttons-big">
+                            <asp:Button ID="UploadButton" CssClass="SideButtons" runat="server" OnClick="UploadButton_Click" Text="Upload your bag" />
+                        </div>
+                        <div class="side-buttons-big">
+                            <asp:Button ID="DownloadButton" CssClass="SideButtons" runat="server" OnClick="DownloadButton_Click" Text="Download your bag" />
+                        </div>
+                        
+                        <div class="side-buttons-big">
+                            <asp:Button ID="BagButton" CssClass="SideButtons" runat="server" OnClick="BagButton_Click" Text="Bag" />
+                        </div>
+                        <div class="side-buttons-big">
+                            <asp:Button ID="SaveButton" CssClass="SideButtons" runat="server" OnClick="SaveButton_Click" Text="Save to your bag" />
+                        </div>
+                    </div>
+                </div>
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" />
+                <div id="right-nav">
+
+                </div>
+
+                
+
+                
+            </div>
+            <%--<div id="footer">
+                <p>Created by Tidish</p>
+            </div>--%>
+            
+            <%--<asp:Button ID="ImageButton" runat="server" Text="Submit" />--%>
+        </div>
+
+    </form>
+
+</body>
+</html>
